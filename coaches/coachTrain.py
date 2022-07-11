@@ -37,24 +37,20 @@ class Coach:
 		# Initialize network
 		if self.opts.invRRDB:
 			self.net1 = InvRRDB(self.opts).to(self.device)
-			self.opts.lr_l2_lambda = 0.1
 		elif self.opts.codeStyleGAN:
 			self.net1 = InvRRDB(self.opts).to(self.device)
 			self.net1.eval()
 			self.net2 = codeStyleGAN(self.opts).to(self.device)
-			self.opts.lr_l2_lambda = 0
 		elif self.opts.Fusion:
 			self.net1 = InvRRDB(self.opts).to(self.device)
 			self.net1.eval()
 			self.net2 = codeStyleGAN(self.opts).to(self.device)
 			self.net2.eval()
 			self.net3 = Fusion(self.opts).to(self.device)
-			self.opts.lr_l2_lambda = 0
 		elif self.opts.finetune:
 			self.net1 = InvRRDB(self.opts).to(self.device)
 			self.net2 = codeStyleGAN(self.opts).to(self.device)
 			self.net3 = Fusion(self.opts).to(self.device)
-			self.opts.lr_l2_lambda = 0.1
 			self.opts.learning_rate = 0.00005
 		else:
 			raise Exception("Need to choose a network to train!!!")
