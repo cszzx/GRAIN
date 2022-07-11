@@ -41,11 +41,11 @@ class TrainOptions:
 		self.parser.add_argument('--CodeStyleGAN_checkpoint_path', default='pretrained_models/codeStyleGAN_model.pt', type=str, help='Path to codeStyleGAN model checkpoint')
 		self.parser.add_argument('--feaFusion_checkpoint_path', default='pretrained_models/Fusion_model.pt', type=str, help='Path to feaFusion model checkpoint')
 
-		self.parser.add_argument('--max_steps', default=500000, type=int, help='Maximum number of training steps')
-		self.parser.add_argument('--image_interval', default=2000, type=int, help='Interval for logging train images during training') # 1500
-		self.parser.add_argument('--board_interval', default=2000, type=int, help='Interval for logging metrics to tensorboard')
-		self.parser.add_argument('--val_interval', default=4000, type=int, help='Validation interval')
-		self.parser.add_argument('--save_interval', default=4000, type=int, help='Model checkpoint interval')
+		self.parser.add_argument('--max_steps', default=300000, type=int, help='Maximum number of training steps')
+		self.parser.add_argument('--image_interval', default=5000, type=int, help='Interval for logging train images during training') # 1500
+		self.parser.add_argument('--board_interval', default=5000, type=int, help='Interval for logging metrics to tensorboard')
+		self.parser.add_argument('--val_interval', default=20000, type=int, help='Validation interval')
+		self.parser.add_argument('--save_interval', default=20000, type=int, help='Model checkpoint interval')
 
 	def parse(self):
 		opts = self.parser.parse_args()
