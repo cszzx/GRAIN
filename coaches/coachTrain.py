@@ -349,11 +349,11 @@ class Coach:
 		if self.opts.invRRDB:
 			params = list(self.net1.parameters())
 		elif self.opts.codeStyleGAN:
-			params = list(self.net2.parameters())
+			params = list(self.net2.encoder.parameters())
 		elif self.opts.Fusion:
 			params = list(self.net3.parameters())
 		elif self.opts.finetune:
-			params = list(self.net1.parameters()) + list(self.net2.parameters()) + list(self.net3.parameters())
+			params = list(self.net1.parameters()) + list(self.net2.encoder.parameters()) + list(self.net3.parameters())
 		if self.opts.optim_name == 'adam':
 			optimizer = torch.optim.Adam(params, lr=self.opts.learning_rate)
 		else:
