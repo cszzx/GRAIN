@@ -16,12 +16,12 @@ This is the official implementation of our CVPR 2022 (Oral) paper "Faithful Extr
 Please download the pre-trained models from the following links.
 | Path | Description
 | :--- | :----------
-|[FFHQ StyleGAN2]() | StyleGAN2 model pretrained on FFHQ taken from [rosinality](https://github.com/rosinality/stylegan2-pytorch) with 1024x1024 output resolution.
-|[FFHQ_StyleGAN2_Discriminator]() | Pretrained StyleGAN2 discriminator model on FFHQ taken from [???]() for use in our adversarial loss during training.
-|[IR-SE50 Model]() | Pretrained IR-SE50 model taken from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch) for use in our ID loss during training.
-|[invRRDB]() | Pretrained model of our Invertible Extreme Rescaling Module on CelebA-HQ dataset.
-|[codeStyleGAN]() | Pretrained model of our Scale-Specific Generative Prior Module on CelebA-HQ dataset.
-|[Fusion]() | Pretrained model of our Upscaling Priors Decoding Module on CelebA-HQ dataset.
+|[FFHQ StyleGAN2](https://drive.google.com/file/d/1pNNcznoqPYmndMpkkqgWde3D08Ea8Z-V/view?usp=sharing) | StyleGAN2 model pretrained on FFHQ taken from [rosinality](https://github.com/rosinality/stylegan2-pytorch) with 1024x1024 output resolution.
+|[FFHQ StyleGAN2 Discriminator](https://drive.google.com/file/d/16tgrQol12gxoDi48cRB1Snz-ka4fx2qr/view?usp=sharing) | Pretrained StyleGAN2 discriminator model on FFHQ taken from [rosinality](https://github.com/rosinality/stylegan2-pytorch) for use in our adversarial loss during training.
+|[IR-SE50 Model](https://drive.google.com/file/d/13Z-dRr74z_9haqZy9N7bRSeJF6StC-r_/view?usp=sharing) | Pretrained IR-SE50 model taken from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch) for use in our ID loss during training.
+|[invRRDB](https://drive.google.com/file/d/187JyB4KowYPUTYZHkcB6mhux4Jejm72-/view?usp=sharing) | Pretrained model of our Invertible Extreme Rescaling Module on CelebA-HQ dataset.
+|[codeStyleGAN](https://drive.google.com/file/d/1filbDDAB-h0bGZL2EOnq_930_ukYzVkC/view?usp=sharing) | Pretrained model of our Scale-Specific Generative Prior Module on CelebA-HQ dataset.
+|[Fusion](https://drive.google.com/file/d/1wawGRWW8O3XA04qauJPLopa2uVoEFdqR/view?usp=sharing) | Pretrained model of our Upscaling Priors Decoding Module on CelebA-HQ dataset.
 
 The pretrained models should be saved to the directory `pretrained_models`.
 
